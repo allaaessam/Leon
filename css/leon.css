@@ -56,7 +56,10 @@ body{
     height: 40px;
 }
 .header  .links{
+    flex: 1;
     position: relative;
+    justify-content: flex-end;
+    display: flex;
 }
 .header .links .icons{
     width: 30px;
@@ -89,18 +92,32 @@ body{
     min-width: 200px;
     height: auto;
     right: 0px;
-    top: calc(80%);
     background-color: #f6f6f6;
     position: absolute;
     margin: 0px;
+    top: calc(80%);
     padding: 0px;
     display: none;
+    right: 0;
+    transition: 0.3s ;
 }
 .header .links:hover ul{
     display: block;
     z-index: 999999;
+    min-width: 200px;
     
 }
+@media (max-width:768px) {
+    .header .links ul{
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width:calc(100% + 60px);
+
+    }  
+}
+
 .header .links ul li a{
     display: block;
     text-decoration: none;
