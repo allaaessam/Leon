@@ -109,7 +109,7 @@ body{
     min-width: 200px;
     
 }
-@media (max-width:768px) {
+@media (max-width:767px) {
     .header .links ul{
         width: 100%;
         position: absolute;
